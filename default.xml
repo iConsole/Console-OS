@@ -3,67 +3,67 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
-  <remote  name="x86"
-           fetch="git://gitscm.sf.net/gitroot/android-x86" />
+  <remote  name="github"
+           fetch="https://github.com/iConsole" />
   <default revision="refs/tags/android-5.1.1_r24"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
-  <!-- from x86 port repositories -->
-  <project path="build" name="platform/build" groups="pdk,tradefed" remote="x86" revision="lollipop-x86" >
+  <!-- from github port repositories -->
+  <project path="build" name="Console-OS_build.git" groups="pdk,tradefed" remote="github" revision="consoleos-lollipop" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel/common" remote="x86" revision="kernel-4.0" />
-  <project path="art" name="platform/art" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="bionic" name="platform/bionic" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="lollipop-x86" />
-  <project path="device/generic/common" name="device/generic/common" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="device/generic/x86" name="device/generic/x86" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="lollipop-x86" />
-  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="lollipop-x86" />
-  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" remote="x86" revision="lollipop-x86" />
-  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="x86" revision="lollipop-x86" />
-  <project path="external/bluetooth/sbc" name="platform/external/bluetooth/sbc" remote="x86" revision="lollipop-x86" />
-  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="lollipop-x86" />
-  <project path="external/drm" name="platform/external/drm" remote="x86" revision="lollipop-x86" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="external/eject" name="platform/external/eject" remote="x86" revision="lollipop-x86" />
-  <project path="external/exfat" name="platform/external/exfat" remote="x86" revision="lollipop-x86" />
-  <project path="external/ffmpeg" name="platform/external/ffmpeg" remote="x86" revision="lollipop-x86" />
-  <project path="external/koush/Superuser" name="platform/external/koush/Superuser" remote="x86" revision="lollipop-x86" />
-  <project path="external/koush/Widgets" name="platform/external/koush/Widgets" remote="x86" revision="lollipop-x86" />
-  <project path="external/libpciaccess" name="platform/external/libpciaccess" remote="x86" revision="lollipop-x86" />
-  <project path="external/libtruezip" name="platform/external/libtruezip" remote="x86" revision="lollipop-x86" />
-  <project path="external/llvm" name="platform/external/llvm" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="lollipop-x86" />
-  <project path="external/ntfs-3g" name="platform/external/ntfs-3g" remote="x86" revision="lollipop-x86" />
-  <project path="external/parted" name="platform/external/parted" remote="x86" revision="lollipop-x86" />
-  <project path="external/stagefright-plugins" name="platform/external/stagefright-plugins" remote="x86" revision="lollipop-x86"/>
-  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="lollipop-x86" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs" remote="x86" revision="lollipop-x86" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/intel/hwcomposer" name="platform/hardware/intel/hwcomposer" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/intel/libsensors" name="platform/hardware/intel/libsensors" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/libaudio" name="platform/hardware/libaudio" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/libcamera" name="platform/hardware/libcamera" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/liblights" name="platform/hardware/liblights" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="lollipop-x86" />
-  <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" groups="pdk-cw-fs" remote="x86" revision="lollipop-x86" />
-  <project path="packages/apps/CMFileManager" name="platform/packages/apps/CMFileManager" remote="x86" revision="lollipop-x86" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="lollipop-x86" />
-  <project path="packages/apps/TSCalibration2" name="platform/packages/apps/TSCalibration2" remote="x86" revision="lollipop-x86" />
-  <project path="system/core" name="platform/system/core" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" remote="x86" revision="lollipop-x86" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="x86" revision="lollipop-x86" />
+  <project path="kernel" name="Console-OS_kernel_common.git" remote="github" revision="kernel-4.0" />
+  <project path="art" name="Console-OS_art.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="bionic" name="Console-OS_bionic.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="bootable/newinstaller" name="Console-OS_bootable_newinstaller.git" remote="github" revision="consoleos-lollipop" />
+  <project path="device/generic/common" name="Console-OS_device_generic_common.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="device/generic/x86" name="Console-OS_device_generic_x86.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="device/generic/x86_64" name="Console-OS_device_generic_x86_64.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="external/alsa-lib" name="Console-OS_external_alsa-lib.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/alsa-utils" name="Console-OS_external_alsa-utils.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/bluetooth/bluez" name="Console-OS_external_bluetooth_bluez.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/bluetooth/glib" name="Console-OS_external_bluetooth_glib.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/bluetooth/sbc" name="Console-OS_external_bluetooth_sbc.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/busybox" name="Console-OS_external_busybox.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/drm" name="Console-OS_external_drm.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/e2fsprogs" name="Console-OS_external_e2fsprogs.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="external/eject" name="Console-OS_external_eject.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/exfat" name="Console-OS_external_exfat.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/ffmpeg" name="Console-OS_external_ffmpeg.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/koush/Superuser" name="Console-OS_external_koush_Superuser.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/koush/Widgets" name="Console-OS_external_koush_Widgets.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/libpciaccess" name="Console-OS_external_libpciaccess.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/libtruezip" name="Console-OS_external_libtruezip.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/llvm" name="Console-OS_external_llvm.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="external/mesa" name="Console-OS_external_mesa.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/ntfs-3g" name="Console-OS_external_ntfs-3g.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/parted" name="Console-OS_external_parted.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/stagefright-plugins" name="Console-OS_external_stagefright-plugins.git" remote="github" revision="consoleos-lollipop"/>
+  <project path="external/v86d" name="Console-OS_external_v86d.git" remote="github" revision="consoleos-lollipop" />
+  <project path="external/wpa_supplicant_8" name="Console-OS_external_wpa_supplicant_8.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="frameworks/av" name="Console-OS_frameworks_av.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="frameworks/base" name="Console-OS_frameworks_base.git" groups="pdk-cw-fs" remote="github" revision="consoleos-lollipop" />
+  <project path="frameworks/native" name="Console-OS_frameworks_native.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/drm_gralloc" name="Console-OS_hardware_drm_gralloc.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/gps" name="Console-OS_hardware_gps.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/intel/hwcomposer" name="Console-OS_hardware_intel_hwcomposer.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/intel/libsensors" name="Console-OS_hardware_intel_libsensors.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/libaudio" name="Console-OS_hardware_libaudio.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/libcamera" name="Console-OS_hardware_libcamera.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/libhardware" name="Console-OS_hardware_libhardware.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/libhardware_legacy" name="Console-OS_hardware_libhardware_legacy.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/liblights" name="Console-OS_hardware_liblights.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/libsensors" name="Console-OS_hardware_libsensors.git" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/ril" name="Console-OS_hardware_ril.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/Bluetooth" name="Console-OS_packages_apps_Bluetooth.git" groups="pdk-cw-fs" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/CMFileManager" name="Console-OS_packages_apps_CMFileManager.git" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/Settings" name="Console-OS_packages_apps_Settings.git" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/TSCalibration2" name="Console-OS_packages_apps_TSCalibration2.git" remote="github" revision="consoleos-lollipop" />
+  <project path="system/core" name="Console-OS_system_core.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="system/extras" name="Console-OS_system_extras.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="system/vold" name="Console-OS_system_vold.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
 
   <!-- from original Android repositories -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
