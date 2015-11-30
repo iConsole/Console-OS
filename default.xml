@@ -21,6 +21,7 @@
   <project path="device/generic/common" name="Console-OS_device_generic_common.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="device/generic/x86" name="Console-OS_device_generic_x86.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="device/generic/x86_64" name="Console-OS_device_generic_x86_64.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="device/consoleos" name="Console-OS_device_consoleos" remote="github" revision="consoleos-lollipop" />
   <project path="external/alsa-lib" name="Console-OS_external_alsa-lib.git" remote="github" revision="consoleos-lollipop" />
   <project path="external/alsa-utils" name="Console-OS_external_alsa-utils.git" remote="github" revision="consoleos-lollipop" />
   <project path="external/bluetooth/bluez" name="Console-OS_external_bluetooth_bluez.git" remote="github" revision="consoleos-lollipop" />
@@ -64,6 +65,14 @@
   <project path="system/core" name="Console-OS_system_core.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="system/extras" name="Console-OS_system_extras.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="system/vold" name="Console-OS_system_vold.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+
+  <project path="external/linux/firmware/broadcom" name="Console-OS_external_linux_firmware_broadcom" remote="github" revision="consoleos-lollipop" />
+  <project path="hardware/intel/vibrator" name="Console-OS_hardware_intel_vibrator" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/intel/fw/bluetooth/broadcom" name="Console-OS_vendor_intel_fw_bluetooth_broadcom" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/intel/fw/bluetooth/intel" name="Console-OS_vendor_intel_fw_bluetooth_intel" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/intel/fw/ipu4" name="Console-OS_vendor_intel_fw_ipu4" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/intel/ufo/gen8" name="Console-OS_vendor_intel_ufo_gen8" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/intel/hardware/ufo/gen7" name="Console-OS_vendor_intel_hardware_ufo_gen7" remote="github" revision="consoleos-lollipop" />
 
   <!-- from original Android repositories -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
