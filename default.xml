@@ -72,6 +72,7 @@
   <project path="vendor/intel/fw/ipu4" name="Console-OS_vendor_intel_fw_ipu4" remote="github" revision="consoleos-lollipop" />
   <project path="vendor/intel/ufo/gen8" name="Console-OS_vendor_intel_ufo_gen8" remote="github" revision="consoleos-lollipop" />
   <project path="vendor/intel/hardware/ufo/gen7" name="Console-OS_vendor_intel_hardware_ufo_gen7" remote="github" revision="consoleos-lollipop" />
+  <project path="vendor/console" name="Console-OS_vendor_console" remote="github" revision="consoleos-lollipop" />
 
   <!-- from original Android repositories -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
