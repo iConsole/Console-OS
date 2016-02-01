@@ -62,6 +62,7 @@
   <project path="packages/apps/CMFileManager" name="Console-OS_packages_apps_CMFileManager.git" remote="github" revision="consoleos-lollipop" />
   <project path="packages/apps/Settings" name="Console-OS_packages_apps_Settings.git" remote="github" revision="consoleos-lollipop" />
   <project path="packages/apps/TSCalibration2" name="Console-OS_packages_apps_TSCalibration2.git" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/Trebuchet" name="Console-OS_packages_apps_Trebuchet.git" remote="github" revision="consoleos-lollipop" />
   <project path="system/core" name="Console-OS_system_core.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="system/extras" name="Console-OS_system_extras.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
   <project path="system/vold" name="Console-OS_system_vold.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
