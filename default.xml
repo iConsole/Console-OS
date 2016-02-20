@@ -58,6 +58,7 @@
   <project path="hardware/liblights" name="Console-OS_hardware_liblights.git" remote="github" revision="consoleos-lollipop" />
   <project path="hardware/libsensors" name="Console-OS_hardware_libsensors.git" remote="github" revision="consoleos-lollipop" />
   <project path="hardware/ril" name="Console-OS_hardware_ril.git" groups="pdk" remote="github" revision="consoleos-lollipop" />
+  <project path="packages/apps/Trebuchet" name="Console-OS_packages_apps_Trebuchet.git" remote="github" revision="consoleos-lollipop" />
   <project path="packages/apps/Bluetooth" name="Console-OS_packages_apps_Bluetooth.git" groups="pdk-cw-fs" remote="github" revision="consoleos-lollipop" />
   <project path="packages/apps/CMFileManager" name="Console-OS_packages_apps_CMFileManager.git" remote="github" revision="consoleos-lollipop" />
   <project path="packages/apps/Settings" name="Console-OS_packages_apps_Settings.git" remote="github" revision="consoleos-lollipop" />
