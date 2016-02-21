@@ -441,7 +441,9 @@
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
+  <!-- Disabled due to Trebuchet being added. For pure AOSP build, disable Trebuchet and enable this, then edit build/target/core to enable 
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
+  -->
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
