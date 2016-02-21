@@ -5,6 +5,8 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="github"
            fetch="https://github.com/iConsole" />
+  <remote name="cm"
+           fetch="https://github.com/CyanogenMod" />
   <default revision="refs/tags/android-5.1.1_r29"
            remote="aosp"
            sync-c="true"
@@ -74,6 +76,9 @@
   <project path="vendor/intel/ufo/gen8" name="Console-OS_vendor_intel_ufo_gen8" remote="github" revision="consoleos-lollipop" />
   <project path="vendor/intel/hardware/ufo/gen7" name="Console-OS_vendor_intel_hardware_ufo_gen7" remote="github" revision="consoleos-lollipop" />
   <project path="vendor/console" name="Console-OS_vendor_console" remote="github" revision="consoleos-lollipop" />
+
+  <!-- from CyanogenMod, typically for UX/assets only -->
+  <project path="packages/apps/CMWallpapers" remote="cm" revision="cm-12.1" />
 
   <!-- from original Android repositories -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -436,9 +441,7 @@
   <project path="packages/apps/InCallUI" name="platform/packages/apps/InCallUI" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <!-- Disabled due to Trebuchet being added. For pure AOSP build, disable Trebuchet and enable this, then edit build/target/core to enable 
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
-  -->
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
   <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
