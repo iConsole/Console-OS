@@ -78,7 +78,7 @@
   <project path="vendor/console" name="Console-OS_vendor_console" remote="github" revision="consoleos-lollipop" />
 
   <!-- from CyanogenMod, typically for UX/assets only -->
-  <project path="packages/apps/CMWallpapers" remote="cm" revision="cm-12.1" />
+  <project path="packages/apps/CMWallpapers" name="android_packages_apps_CMWallpapers.git" remote="cm" revision="cm-12.1" />
 
   <!-- from original Android repositories -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
